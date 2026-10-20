@@ -1,0 +1,22 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.title-font { font-family: 'Pacifico', cursive; }
+.ui-font { font-family: 'Comfortaa', cursive; }
+.hidden { display: none !important; }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #fbcfe8; border-radius: 10px; }
+::-webkit-scrollbar-thumb { background: #f43f5e; border-radius: 10px; }
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-8px) rotate(2deg); }
+}
+.animate-float { animation: float 3s ease-in-out infinite; }
+@keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 15px rgba(244, 63, 94, 0.4); }
+    50% { box-shadow: 0 0 30px rgba(244, 63, 94, 0.8); }
+}
+.glow-effect { animation: pulse-glow 2s infinite; }
